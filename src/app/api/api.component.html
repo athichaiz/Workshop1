@@ -1,0 +1,27 @@
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+<div>
+    <br>
+    <button (click)="onClick()">show</button>
+    <br>
+</div>
+<br>
+<table style="width:50%">
+    <tr>
+        <th>NameMovie</th>
+        <th>TypeMovie</th>
+        <th>MoviePrice</th>
+        <th>Movieid</th>
+    </tr>
+    <tr>
+        <td>{{ movies.NameMovie }}</td>
+        <td>{{ movies.TypeMovie }}</td>
+        <td>{{ movies.MoviePrice }}</td>
+        <td>{{ movies.Movieid }}</td>
+    </tr>
+</table>

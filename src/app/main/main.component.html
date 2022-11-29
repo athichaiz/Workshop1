@@ -1,0 +1,15 @@
+<h1>Main Page</h1>
+<p>{{wel}}</p>
+
+<div>
+    <p>{{showmsg}}</p>
+
+    <app-about [see]="secrets[0].secret"   (notify)="onNotifyClick($event)"></app-about>
+    <br>
+    <input type="text" [(ngModel)] = "mid">
+    &nbsp;
+    
+    <app-api  [mvid]="mid" (getMovie)="onNotifyClick1($event)"> </app-api>
+    <!-- <button [routerLink]="['/about']" routerLinkActive="active" >about</button> -->
+    
+</div>
